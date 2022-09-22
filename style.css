@@ -1,0 +1,75 @@
+:root {
+  --primary-color: #45EDA1;
+  --background: #000000;
+  --green-2: #87D322;
+  --button-hover: #8CC83A;
+  --black: #000000;
+  --black-2: #2B2B2B;
+  --grey-1: #8B8B8B;
+  --grey-2: #ADADAD;
+  --grey-3: #F5F5F5;
+  --grey-4: #F1F1F1;
+  --off-white: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation */
+.nav {
+  background-color: var(--background);
+  color: var(--off-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 80px;
+}
+
+.nav .nav__list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav .nav__brand img {
+  height: 32px;
+}
+
+.nav .nav__list .nav__listitem {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.nav .nav__list .nav__listitem a {
+  color: var(--off-white);
+  text-decoration: none;
+}
+
+.nav .nav__list .nav__listitem a:hover {
+  color: var(--green-2)
+}
+
+.nav .nav__list .nav__listitem--btn {
+  background-color: var(--off-white);
+  padding: 12px 32px;
+  border-radius: 40px;
+}
+
+.nav .nav__list .nav__listitem--btn a {
+  color: var(--black);
+}
+
+.nav .nav__list .nav__listitem--btn:hover {
+  background-color: var(--green-2);
+}
+
+.nav .nav__list .nav__listitem--btn:hover a {
+  color: var(--off-white);
+}
+
+
+/* End Navigation */
