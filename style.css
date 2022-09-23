@@ -70,6 +70,10 @@ html {
   color: var(--off-white);
 }
 
+.btn--block {
+  min-width: 100%;
+}
+
 .pointer {
   color: var(--off-white);
   min-width: 90px;
@@ -376,4 +380,104 @@ html {
 .platforms .platforms__tweet {
   width: 600px;
   margin-bottom: 32px;
+}
+
+/* Pricing Section */
+.pricing {
+  padding: 140px;
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pricing .pricing__heading {
+  color: var(--off-white);
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.pricing .pricing__toggle {
+  display: flex;
+  align-items: center;
+}
+
+.pricing .pricing__checkbox {
+  margin: 0 24px;
+}
+
+.pricing__toggle {
+  position: relative;
+}
+
+.pricing__toggle .pricing__text {
+  color: var(--grey-1);
+}
+
+.pricing__toggle .pricing__text--active {
+  color: var(--off-white);
+}
+
+.pricing .pointer {
+  position: absolute;
+  left: calc(100% + 24px);
+}
+
+.pricing__box {
+  display: flex;
+  padding: 32px 0;
+}
+
+.pricing__card {
+  background-color: var(--off-white);
+  padding: 32px;
+  border-radius: 16px;
+  min-width: 360px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.pricing__card--active {
+  background-color: var(--green-2);
+}
+
+.pricing__card .pricing__title {
+  font-size: 36px;
+}
+
+.pricing__card .pricing__divider {
+  margin: 32px 0;
+  height: 1px;
+  border-top: 0;
+  border-color: var(--grey-2);
+}
+
+.pricing .pricing__cost {
+  margin-bottom: 24px;
+}
+
+.pricing .pricing__amount {
+  font-size: 2.5rem;
+}
+
+.pricing .pricing__perks {
+  margin-bottom: 32px;
+}
+
+.pricing .pricing__perks li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.pricing .pricing__perks li::before {
+  content: "✓";
+  margin-right: 8px;
+}
+.pricing__card .pricing_btn {
+  margin-top: auto;
+  cursor: pointer;
 }
