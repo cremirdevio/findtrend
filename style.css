@@ -135,7 +135,7 @@ html {
 
 .hero .hero__title {
   color: var(--off-white);
-  font-size: 72px;
+  font-size: 4rem;
   text-align: center;
 }
 
@@ -174,3 +174,34 @@ html {
 }
 
 /* End of Hero Section */
+
+/* NewTabs Section */
+
+.newtabs {
+  padding: 140px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--green-2);
+}
+
+.newtabs .newtabs__title {
+  font-size: 4rem;
+  margin-bottom: 60px;
+}
+
+.newtabs .newtabs__content {
+  background-color: var(--off-white);
+  padding: 60px 80px;
+  border-radius: 16px;
+  margin-bottom: 60px;
+}
+
+.newtabs .newtabs__content img {
+  height: 82px;
+}
+
+.newtabs .newtabs__info {
+  max-width: 700px;
+  text-align: center;
+}
