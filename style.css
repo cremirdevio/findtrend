@@ -6,6 +6,12 @@
 }
 
 @font-face {
+  font-family: 'GoodDogDP';
+  font-style: normal;
+  src: url('./fonts/GOODDP__.TTF');
+}
+
+@font-face {
   font-family: 'Effra';
   font-style: normal;
   font-weight: normal;
@@ -26,6 +32,7 @@
   --off-white: #FFFFFF;
 
   --font-family: 'Effra';
+  --cursive-font: 'GoodDogDP';
 }
 
 * {
@@ -50,10 +57,40 @@ html {
   border-radius: 40px;
   font-size: 1rem;
   max-width: fit-content;
+  white-space: nowrap;
 }
 
 .btn--primary {
   background-color: var(--green-2);
+}
+
+.pointer {
+  color: var(--off-white);
+  min-width: 90px;
+  max-width: 90px;
+  rotate: 6deg;
+  display: flex;
+  flex-direction: column;
+}
+
+.pointer .pointer__text {
+  font-size: 14px;
+  text-align: center;
+  font-family: var(--cursive-font);
+  order: 1;
+}
+
+.pointer .pointer__img {
+  width: 24px;
+  rotate: 100deg;
+  order: 1;
+}
+
+.pointer--right .pointer__img {
+  width: 24px;
+  rotate: -80deg;
+  margin-left: 45px;
+  order: 0
 }
 
 /* End of General Styles */
@@ -146,6 +183,18 @@ html {
   padding-bottom: 40px;
   line-height: 1.5;
   font-size: 1rem;
+}
+
+.hero__box {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.hero__box .pointer {
+  position: absolute;
+  left: calc(100% + 18px);
 }
 
 .hero .hero__socialmedia {
