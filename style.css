@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Effra';
+  font-weight: bold;
+  font-style: normal;
+  src: url('./fonts/Effra_Std_Bd.ttf');
+}
+
+@font-face {
+  font-family: 'Effra';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Effra'), url('./fonts/Effra_Std_Rg.woff') format('woff');
+ }
+
 :root {
   --primary-color: #45EDA1;
   --background: #000000;
@@ -10,6 +24,8 @@
   --grey-3: #F5F5F5;
   --grey-4: #F1F1F1;
   --off-white: #FFFFFF;
+
+  --font-family: 'Effra';
 }
 
 * {
@@ -20,7 +36,10 @@
 
 html {
   font-size: 112.5%;
+  font-family: var(--font-family);
 }
+
+
 
 /* General Styles */
 .btn {
