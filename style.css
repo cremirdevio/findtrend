@@ -243,14 +243,34 @@ html {
   background-color: var(--off-white);
   padding: 60px 80px;
   border-radius: 16px;
-  margin-bottom: 60px;
 }
 
 .newtabs .newtabs__content img {
   height: 82px;
 }
 
+.newtabs .newtabs_box {
+  display: flex;
+  position: relative;
+}
+
+.newtabs .newtabs_box .pointer {
+  color: var(--black);
+  position: absolute;
+  top: 30%;
+}
+
+.newtabs .newtabs_box .pointer:first-child {
+  right: calc(100% + 12px);
+}
+
+.newtabs .newtabs_box .pointer:last-child {
+  left: calc(100% + 24px);
+}
+
+
 .newtabs .newtabs__info {
   max-width: 700px;
   text-align: center;
+  margin-top: 60px;
 }
