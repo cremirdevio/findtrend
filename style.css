@@ -274,3 +274,49 @@ html {
   text-align: center;
   margin-top: 60px;
 }
+
+/* End of Newtabs section */
+
+/* Text Section */
+.texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 140px;
+}
+
+.texts .texts__title {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bold;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.texts .texts__title--light {
+  color: var(--grey-2);
+}
+
+/* End of Brands Section */
+
+/* Partners Section */
+.partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 140px;
+}
+
+.partners .partners__title {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.partners .partners__imgs {
+  width: 100%;
+  margin-top: 80px;
+}
