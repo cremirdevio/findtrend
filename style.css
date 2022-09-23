@@ -58,10 +58,16 @@ html {
   font-size: 1rem;
   max-width: fit-content;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .btn--primary {
   background-color: var(--green-2);
+}
+
+.btn--dark {
+  background-color: var(--black);
+  color: var(--off-white);
 }
 
 .pointer {
@@ -319,4 +325,55 @@ html {
 .partners .partners__imgs {
   width: 100%;
   margin-top: 80px;
+}
+
+/* End of Partners Section */
+
+/* Platforms Section */
+.platforms {
+  padding: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.platforms .platforms__title {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.platforms .platforms__tab {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.platforms__tab .platforms__tablink {
+  text-decoration: none;
+  width: 96px;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.platforms__tab .platforms__tablink:hover {
+  cursor: pointer;
+  background-color: var(--grey-3);
+}
+
+.platforms__tab .platforms__tablink--active {
+  background-color: var(--green-2);
+}
+
+.platforms__tab .platforms__tabicon {
+  height: 32px;
+}
+
+.platforms .platforms__tweet {
+  width: 600px;
+  margin-bottom: 32px;
 }
