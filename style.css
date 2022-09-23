@@ -18,6 +18,27 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 112.5%;
+}
+
+/* General Styles */
+.btn {
+  background-color: var(--grey-1);
+  border: none;
+  padding: 16px 32px;
+  color: var(--black);
+  border-radius: 40px;
+  font-size: 1rem;
+  max-width: fit-content;
+}
+
+.btn--primary {
+  background-color: var(--green-2);
+}
+
+/* End of General Styles */
+
 /* Navigation */
 .nav {
   background-color: var(--background);
@@ -41,7 +62,7 @@
 .nav .nav__list .nav__listitem {
   margin-left: 10px;
   margin-right: 10px;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .nav .nav__list .nav__listitem a {
@@ -73,3 +94,64 @@
 
 
 /* End Navigation */
+
+/* Hero Section */
+
+.hero {
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0px;
+}
+
+.hero .hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .hero__title {
+  color: var(--off-white);
+  font-size: 72px;
+  text-align: center;
+}
+
+.hero .hero__description {
+  color: var(--grey-1);
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 40px;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.hero .hero__socialmedia {
+  margin-top: 90px;
+  display: inline-flex;
+  flex-direction: row-reverse;
+}
+
+.hero .hero__socialmedia img {
+  height: 90px;
+}
+
+.hero .hero__socialmedia img:not(:last-child) {
+  margin-left: -90px;
+}
+
+.hero .hero__socialmedia img:nth-child(odd) {
+  margin-bottom: 60px;
+  rotate: 4deg;
+  position: relative;
+  bottom: -48px;
+}
+
+.hero .hero__socialmedia img:nth-child(even) {
+  rotate: -4deg;
+}
+
+/* End of Hero Section */
