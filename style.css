@@ -103,6 +103,17 @@ html {
   order: 0
 }
 
+.main_tittle {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main_tittle--grey {
+  color: var(--grey-3);
+}
+
 /* End of General Styles */
 
 /* Navigation */
@@ -480,4 +491,16 @@ html {
 .pricing__card .pricing_btn {
   margin-top: auto;
   cursor: pointer;
+}
+
+/* End of Platforms Section */
+
+/* Newsletter Section */
+.newsletter {
+  padding: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--green-2);
 }
