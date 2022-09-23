@@ -42,7 +42,7 @@
 }
 
 html {
-  font-size: 112.5%;
+  font-size: 87.5%;
   font-family: var(--font-family);
 }
 
@@ -126,6 +126,10 @@ html {
   padding: 12px 80px;
 }
 
+.nav--light {
+  background-color: var(--off-white);
+}
+
 .nav .nav__list {
   list-style-type: none;
   display: flex;
@@ -145,6 +149,10 @@ html {
 .nav .nav__list .nav__listitem a {
   color: var(--off-white);
   text-decoration: none;
+}
+
+.nav--light .nav__list .nav__listitem a {
+  color: var(--black);
 }
 
 .nav .nav__list .nav__listitem a:hover {
@@ -446,8 +454,8 @@ html {
   background-color: var(--off-white);
   padding: 32px;
   border-radius: 16px;
-  min-width: 360px;
   display: flex;
+  min-width: 300px;
   flex-direction: column;
   margin: 0 20px;
 }
@@ -458,6 +466,10 @@ html {
 
 .pricing__card .pricing__title {
   font-size: 36px;
+}
+
+.pricing__card .pricing__subtitle {
+  /* font-size: 14px; */
 }
 
 .pricing__card .pricing__divider {
@@ -504,3 +516,9 @@ html {
   flex-direction: column;
   background-color: var(--green-2);
 }
+
+/* End of Newsletter */
+
+/* Footer Section */
+
+/* End of Footer Section */
