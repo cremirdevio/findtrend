@@ -488,9 +488,12 @@ html {
   text-align: center;
 }
 
-.partners .partners__imgs {
+.partners .partners_logos {
+  display: grid;
   width: 100%;
-  margin-top: 80px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  padding-top: 80px;
 }
 
 
@@ -498,6 +501,13 @@ html {
   .partners {
     padding: 80px 18px;
   }
+
+  .partners .partners_logos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    padding-top: 32;
+  }
+  
 }
 
 /* ==== End of Partners Section */
