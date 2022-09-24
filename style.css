@@ -610,6 +610,7 @@ html {
   }
 
 }
+/* ==== End of Platforms Section */
 
 /* Pricing Section */
 .pricing {
@@ -691,28 +692,6 @@ html {
   color: var(--grey-2);
 }
 
-@media screen and (max-width: 700px) {
-  .pricing {
-    padding: 80px 18px;
-  }
-
-  .pricing__toggle {
-    position: relative;
-    margin-bottom: 80px;
-  }
-
-  .pricing__toggle .pointer.desktop {
-    display: none;
-  }
-
-  .pricing .pricing__toggle .pointer {
-    left: 75%;
-    top: 80%;
-  }
-}
-
-/* ==== Ends here */
-
 .pricing .pointer {
   position: absolute;
   left: calc(100% + 24px);
@@ -779,7 +758,44 @@ html {
   cursor: pointer;
 }
 
-/* ==== End of Platforms Section */
+@media screen and (max-width: 700px) {
+  .pricing {
+    padding: 80px 18px;
+  }
+
+  .pricing__toggle {
+    position: relative;
+    margin-bottom: 80px;
+  }
+
+  .pricing__toggle .pointer.desktop {
+    display: none;
+  }
+
+  .pricing .pricing__toggle .pointer {
+    left: 75%;
+    top: 80%;
+  }
+
+  .pricing__box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .pricing__box .pricing__card {
+    min-height: 600px;
+    margin: 12px 0;
+  }
+
+  .pricing,
+  .pricing__card,
+  .pricing__card .btn {
+    font-size: 18px;
+  }
+
+}
+
+/* ==== End of Pricing Section */
 
 /* Newsletter Section */
 .newsletter {
