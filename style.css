@@ -116,7 +116,7 @@ html {
 
 @media screen and (max-width: 700px) {
   .main__title {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
   }
 }
 
@@ -379,7 +379,6 @@ html {
 }
 
 .newtabs .newtabs__title {
-  font-size: 4rem;
   margin-bottom: 60px;
 }
 
@@ -417,6 +416,29 @@ html {
   max-width: 700px;
   text-align: center;
   margin-top: 60px;
+}
+
+@media screen and (max-width: 700px) {
+  .newtabs {
+    padding: 80px 14px;
+  }
+
+  .newtabs .newtabs__content img {
+    height: 70px;
+  }
+
+  .newtabs .newtabs__content {
+    padding: 24px;
+    border-radius: 14px;
+  }
+
+  .newtabs_box .pointer {
+    display: none;
+  }
+
+  .newtabs .newtabs__info {
+    max-width: 290px;
+  }
 }
 
 /* ==== End of Newtabs section */
