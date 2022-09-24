@@ -493,6 +493,13 @@ html {
   margin-top: 80px;
 }
 
+
+@media screen and (max-width: 700px) {
+  .partners {
+    padding: 80px 18px;
+  }
+}
+
 /* ==== End of Partners Section */
 
 /* Platforms Section */
