@@ -103,15 +103,21 @@ html {
   order: 0
 }
 
-.main_tittle {
+.main__title {
   color: var(--black);
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: bold;
   text-align: center;
 }
 
-.main_tittle--grey {
+.main__title--grey {
   color: var(--grey-3);
+}
+
+@media screen and (max-width: 700px) {
+  .main__title {
+    font-size: 2.8rem;
+  }
 }
 
 /* ==== End of General Styles */
@@ -290,7 +296,6 @@ html {
 
 .hero .hero__title {
   color: var(--off-white);
-  font-size: 4rem;
   text-align: center;
 }
 
@@ -331,17 +336,34 @@ html {
 
 .hero .hero__socialmedia img:nth-child(odd) {
   margin-bottom: 60px;
-  rotate: 4deg;
+  rotate: 3deg;
   position: relative;
   bottom: -48px;
 }
 
 .hero .hero__socialmedia img:nth-child(even) {
-  rotate: -4deg;
+  rotate: -3deg;
 }
 
 @media screen and (max-width: 700px) {
-  .hero {}
+  .hero__box .pointer {
+    display: none;
+  }
+
+  .hero .hero__socialmedia {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .hero .hero__socialmedia img:not(:last-child) {
+    margin-left: 0;
+  }
+
+  .hero .hero__socialmedia img:nth-child(odd), 
+  .hero .hero__socialmedia img  {
+    margin-bottom: 0;
+    position: static;
+  }
 }
 
 /* ==== End of Hero Section */
