@@ -16,7 +16,7 @@
   font-style: normal;
   font-weight: normal;
   src: local('Effra'), url('./fonts/Effra_Std_Rg.woff') format('woff');
- }
+}
 
 :root {
   --primary-color: #45EDA1;
@@ -114,7 +114,7 @@ html {
   color: var(--grey-3);
 }
 
-/* End of General Styles */
+/* ==== End of General Styles */
 
 /* Navigation */
 .nav {
@@ -138,6 +138,11 @@ html {
 
 .nav .nav__brand img {
   height: 32px;
+}
+
+.nav .nav__brand .mobile,
+.nav .nav__hamburger {
+  display: none;
 }
 
 .nav .nav__list .nav__listitem {
@@ -177,8 +182,92 @@ html {
   color: var(--off-white);
 }
 
+/* MOBILE */
+@media screen and (max-width: 700px) {
+  .nav {
+    padding: 24px 18px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
 
-/* End Navigation */
+  .nav .nav__hamburger {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .nav .nav__hamburger .lines {
+    background-color: var(--off-white);
+    display: block;
+    width: 80%;
+    height: 2px;
+    position: absolute;
+    transition: 0.3s all;
+  }
+
+
+  .nav .nav__hamburger .lines:first-child {
+    transform: translateY(-4px) rotate(0deg);
+  }
+
+  .nav .nav__hamburger .lines:last-child {
+    transform: translateY(4px) rotate(0deg);
+  }
+
+  .nav .nav__hamburger--active .lines:first-child {
+    transform: rotate(45deg);
+  }
+
+  .nav .nav__hamburger--active .lines:last-child {
+    transform: rotate(-45deg);
+  }
+
+  .nav,
+  .nav__list {
+    flex-direction: column;
+  }
+
+  .nav__list {
+    transition: .5s all;
+  }
+
+  .nav .nav__listitem {
+    padding: 20px 0;
+  }
+
+  .nav .nav__brand {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav .nav__brand .mobile,
+  .nav .nav__hamburger {
+    display: flex;
+  }
+
+  .nav .nav__brand .desktop {
+    display: none;
+  }
+
+  .nav .nav__list {
+    display: none;
+  }
+
+  header {
+    height: max-content;
+    padding-bottom: 80px;
+  }
+
+}
+
+/* ==== End Navigation */
 
 /* Hero Section */
 
@@ -251,7 +340,11 @@ html {
   rotate: -4deg;
 }
 
-/* End of Hero Section */
+@media screen and (max-width: 700px) {
+  .hero {}
+}
+
+/* ==== End of Hero Section */
 
 /* NewTabs Section */
 
@@ -304,7 +397,7 @@ html {
   margin-top: 60px;
 }
 
-/* End of Newtabs section */
+/* ==== End of Newtabs section */
 
 /* Text Section */
 .texts {
@@ -327,7 +420,7 @@ html {
   color: var(--grey-2);
 }
 
-/* End of Brands Section */
+/* ==== End of Brands Section */
 
 /* Partners Section */
 .partners {
@@ -350,7 +443,7 @@ html {
   margin-top: 80px;
 }
 
-/* End of Partners Section */
+/* ==== End of Partners Section */
 
 /* Platforms Section */
 .platforms {
@@ -448,7 +541,7 @@ html {
   transition: .5s all;
 }
 
-.pricing__checkbox:checked ~ .pricing__checkbox__label::before {
+.pricing__checkbox:checked~.pricing__checkbox__label::before {
   background-color: var(--green-2);
   margin-left: 52px;
 }
@@ -467,23 +560,23 @@ html {
 
 
 /* To be replaced with JS */
-.pricing__checkbox:checked ~ .p_monthly {
+.pricing__checkbox:checked~.p_monthly {
   color: var(--grey-2);
 }
 
-.pricing__checkbox:checked ~ .p_yearly {
+.pricing__checkbox:checked~.p_yearly {
   color: var(--off-white);
 }
 
-.pricing__checkbox:not(:checked) ~ .p_monthly {
+.pricing__checkbox:not(:checked)~.p_monthly {
   color: var(--off-white);
 }
 
-.pricing__checkbox:not(:checked) ~ .p_yearly {
+.pricing__checkbox:not(:checked)~.p_yearly {
   color: var(--grey-2);
 }
 
-/* Ends here */
+/* ==== Ends here */
 
 .pricing .pointer {
   position: absolute;
@@ -545,12 +638,13 @@ html {
   content: "✓";
   margin-right: 8px;
 }
+
 .pricing__card .pricing_btn {
   margin-top: auto;
   cursor: pointer;
 }
 
-/* End of Platforms Section */
+/* ==== End of Platforms Section */
 
 /* Newsletter Section */
 .newsletter {
@@ -562,8 +656,8 @@ html {
   background-color: var(--green-2);
 }
 
-/* End of Newsletter */
+/* ==== End of Newsletter */
 
 /* Footer Section */
 
-/* End of Footer Section */
+/* ==== End of Footer Section */

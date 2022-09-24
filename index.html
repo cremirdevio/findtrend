@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Findtrend</title>
-  <link rel="stylesheet" href="style.css?34">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="./nav.js"></script>
 </head>
 <body>
   <div class="main">
@@ -14,8 +15,13 @@
     <header>
       <nav class="nav">
         <a href="#" class="nav__brand">
-          <img src="./images/logo/findtrend.png" alt="findtrend">
-        
+          <img class="desktop" src="./images/logo/findtrend.png" alt="findtrend">
+          <img class="mobile" src="./images/icons/findtrend.png" alt="findtrend">
+          <div class="nav__hamburger nav__hamburger--active">
+            <span class="lines"></span>
+            <span class="lines"></span>
+          </div>
+        </a>
 
         <ul class="nav__list">
           <li class="nav__listitem"><a href="#">About</a></li>
