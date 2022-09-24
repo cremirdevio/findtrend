@@ -19,7 +19,7 @@
 }
 
 :root {
-  --primary-color: #45EDA1;
+  --primary-color: #A8FF35;
   --background: #000000;
   --green-2: #87D322;
   --button-hover: #8CC83A;
@@ -61,8 +61,12 @@ html {
   cursor: pointer;
 }
 
-.btn--primary {
+.btn:hover {
   background-color: var(--green-2);
+}
+
+.btn--primary {
+  background-color: var(--primary-color);
 }
 
 .btn--dark {
@@ -174,7 +178,7 @@ html {
 }
 
 .nav .nav__list .nav__listitem a:hover {
-  color: var(--green-2)
+  color: var(--primary-color)
 }
 
 .nav .nav__list .nav__listitem--btn {
@@ -188,7 +192,7 @@ html {
 }
 
 .nav .nav__list .nav__listitem--btn:hover {
-  background-color: var(--green-2);
+  background-color: var(--primary-color);
 }
 
 .nav .nav__list .nav__listitem--btn:hover a {
@@ -382,7 +386,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--green-2);
+  background-color: var(--primary-color);
 }
 
 .newtabs .newtabs__title {
@@ -564,11 +568,11 @@ html {
 
 .platforms__tab .platforms__tablink:hover {
   cursor: pointer;
-  background-color: var(--green-2);
+  background-color: var(--primary-color);
 }
 
 .platforms__tab .platforms__tablink--active {
-  background-color: var(--green-2);
+  background-color: var(--primary-color);
 }
 
 .platforms__tab .platforms__tabicon {
@@ -658,7 +662,7 @@ html {
 }
 
 .pricing__checkbox:checked~.pricing__checkbox__label::before {
-  background-color: var(--green-2);
+  background-color: var(--primary-color);
   margin-left: 52px;
 }
 
@@ -713,7 +717,7 @@ html {
 }
 
 .pricing__card--active {
-  background-color: var(--green-2);
+  background-color: var(--primary-color);
 }
 
 .pricing__card .pricing__title {
@@ -804,8 +808,19 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: var(--green-2);
+  background-color: var(--primary-color);
 }
+
+.newsletter .newsletter__title2 {
+  color: #87D322;
+}
+
+@media screen and (max-width: 700px) {
+  .newsletter {
+    padding: 80px 18px;
+  }
+}
+
 
 /* ==== End of Newsletter */
 
