@@ -103,6 +103,13 @@ html {
   order: 0
 }
 
+.pointer--left-up .pointer__img {
+  width: 24px;
+  rotate: 80deg;
+  transform: scale(-1, 1);
+  order: 0;
+}
+
 .main__title {
   color: var(--black);
   font-size: 4rem;
@@ -519,6 +526,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #fafafa;
 }
 
 .platforms .platforms__title {
@@ -532,20 +540,31 @@ html {
 .platforms .platforms__tab {
   display: flex;
   margin-bottom: 60px;
+  width: 100%;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
 }
 
 .platforms__tab .platforms__tablink {
   text-decoration: none;
-  width: 96px;
-  height: 96px;
+  /* width: 124px;
+  height: 124px; */
+  padding: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--off-white);
+  border-radius: 12px;
 }
+
+.platforms__tab .platforms__tablink:not(:last-child) {
+  margin-right: 24px;
+}
+
 
 .platforms__tab .platforms__tablink:hover {
   cursor: pointer;
-  background-color: var(--grey-3);
+  background-color: var(--green-2);
 }
 
 .platforms__tab .platforms__tablink--active {
@@ -553,12 +572,43 @@ html {
 }
 
 .platforms__tab .platforms__tabicon {
-  height: 32px;
+  width: 60px;
+  height: 60px;
 }
 
 .platforms .platforms__tweet {
   width: 600px;
   margin-bottom: 32px;
+}
+
+@media screen and (max-width: 700px) {
+  .platforms {
+    padding: 80px 18px;
+  }
+  
+  .platforms .platforms__tab {
+    margin-bottom: 32px;
+  }
+
+  .platforms__tab .platforms__tablink {
+    width: 64px;
+    height: 64px;
+  }
+
+  .platforms__tab .platforms__tabicon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .platforms__tab .platforms__tablink--active {
+    border-radius: 8px;
+  }
+
+  .platforms .platforms__tweet {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
 }
 
 /* Pricing Section */
@@ -573,8 +623,6 @@ html {
 
 .pricing .pricing__heading {
   color: var(--off-white);
-  font-size: 2.5rem;
-  font-weight: bold;
   text-align: center;
   margin-bottom: 32px;
 }
@@ -619,12 +667,12 @@ html {
 
 .pricing__toggle .pricing__text {
   color: var(--grey-1);
+  font-size: 18px;
 }
 
 .pricing__toggle .pricing__text--active {
   color: var(--off-white);
 }
-
 
 /* To be replaced with JS */
 .pricing__checkbox:checked~.p_monthly {
@@ -641,6 +689,26 @@ html {
 
 .pricing__checkbox:not(:checked)~.p_yearly {
   color: var(--grey-2);
+}
+
+@media screen and (max-width: 700px) {
+  .pricing {
+    padding: 80px 18px;
+  }
+
+  .pricing__toggle {
+    position: relative;
+    margin-bottom: 80px;
+  }
+
+  .pricing__toggle .pointer.desktop {
+    display: none;
+  }
+
+  .pricing .pricing__toggle .pointer {
+    left: 75%;
+    top: 80%;
+  }
 }
 
 /* ==== Ends here */
