@@ -425,7 +425,32 @@ html {
 }
 
 .pricing .pricing__checkbox {
+  visibility: hidden;
+}
+
+.pricing .pricing__checkbox__label {
+  width: 104px;
+  height: 52px;
+  background-color: var(--off-white);
   margin: 0 24px;
+  border-radius: 99px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.pricing .pricing__checkbox__label::before {
+  content: "";
+  display: block;
+  background-color: var(--grey-2);
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  transition: .5s all;
+}
+
+.pricing__checkbox:checked ~ .pricing__checkbox__label::before {
+  background-color: var(--green-2);
+  margin-left: 52px;
 }
 
 .pricing__toggle {
@@ -439,6 +464,26 @@ html {
 .pricing__toggle .pricing__text--active {
   color: var(--off-white);
 }
+
+
+/* To be replaced with JS */
+.pricing__checkbox:checked ~ .p_monthly {
+  color: var(--grey-2);
+}
+
+.pricing__checkbox:checked ~ .p_yearly {
+  color: var(--off-white);
+}
+
+.pricing__checkbox:not(:checked) ~ .p_monthly {
+  color: var(--off-white);
+}
+
+.pricing__checkbox:not(:checked) ~ .p_yearly {
+  color: var(--grey-2);
+}
+
+/* Ends here */
 
 .pricing .pointer {
   position: absolute;
