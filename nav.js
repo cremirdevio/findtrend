@@ -1,6 +1,6 @@
 const ACTIVE_CLASS = 'nav__hamburger--active';
 let hamburger = document.querySelector('.nav__hamburger');
-let navigationList = document.querySelectorAll('.nav__list');
+let navigationList = document.querySelectorAll('header .nav__list');
 
 // Init
 hamburger.classList.remove(ACTIVE_CLASS);

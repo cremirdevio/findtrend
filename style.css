@@ -273,7 +273,7 @@ html {
     display: none;
   }
 
-  .nav .nav__list {
+  header .nav .nav__list {
     display: none;
   }
 
@@ -825,5 +825,24 @@ html {
 /* ==== End of Newsletter */
 
 /* Footer Section */
+@media screen and (max-width: 700px) {
+  footer .nav {
+    padding: 80px 18px;
+    height: min-content;
+  }
+
+  footer .nav__list {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  footer .nav .nav__brand img {
+    margin: auto;
+    height: 40px;
+  } 
+
+}
+
 
 /* ==== End of Footer Section */
