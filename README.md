@@ -1,7 +1,9 @@
 # FINDTREND
 
-> Cloning of a free figma design, a website called FINDTREND \n
-**Website URL** : `[https://cremirdevio.github.io/findtrend/](https://cremirdevio.github.io/findtrend/)` \n
+> Cloning of a free figma design, a website called FINDTREND
+
+**Website URL** : [https://cremirdevio.github.io/findtrend/](https://cremirdevio.github.io/findtrend/)
+
 **Duration** : `Less than 12 active hours`
 
 ## Screenshot of outcome
@@ -21,4 +23,4 @@
 
 > **I'd love to work on your next project**
 
-**Upwork Profile** : `[https://www.upwork.com/freelancers/~0137fdeb8b70ac2cfc?viewMode=1](https://www.upwork.com/freelancers/~0137fdeb8b70ac2cfc?viewMode=1)`
+**Upwork Profile** : [https://www.upwork.com/freelancers/~0137fdeb8b70ac2cfc?viewMode=1](https://www.upwork.com/freelancers/~0137fdeb8b70ac2cfc?viewMode=1)
