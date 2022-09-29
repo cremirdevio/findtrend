@@ -1,25 +1,28 @@
-const ACTIVE_CLASS = 'nav__hamburger--active';
-let hamburger = document.querySelector('.nav__hamburger');
-let navigationList = document.querySelectorAll('header .nav__list');
+const ACTIVE_CLASS = "nav__hamburger--active";
+let hamburger = document.querySelector(".nav__hamburger");
+let navigationList = document.querySelectorAll("header .nav__list");
 
 // Init
-hamburger.classList.remove(ACTIVE_CLASS);
-navigationList.forEach(element => {
-  element.style.display = "none";
-});
+if (window.screen.height <= 700) {
+  hamburger.classList.remove(ACTIVE_CLASS);
+  navigationList.forEach((element) => {
+    element.style.display = "none";
+  });
+}
 
-
-hamburger.addEventListener('click', () => {
-  
+const handleResize = () => {
   if (hamburger.classList.contains(ACTIVE_CLASS)) {
     hamburger.classList.remove(ACTIVE_CLASS);
-    navigationList.forEach(element => {
+    navigationList.forEach((element) => {
       element.style.display = "none";
     });
-  }  else {
+  } else {
     hamburger.classList.add(ACTIVE_CLASS);
-    navigationList.forEach(element => {
+    navigationList.forEach((element) => {
       element.style.display = "flex";
     });
-  };
-});
+  }
+};
+
+hamburger.addEventListener("click", handleResize);
+window.addEventListener("resize", handleResize);
